@@ -8,6 +8,9 @@ function refreshWeather(response) {
   let windElement = document.querySelector("#wind");
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
+  let iconElement = document.querySelector("#icon");
+
+  console.log(response.data);
 
   cityElement.innerHTML = response.data.city; // updates city response based on api response
   timeElement.innerHTML = formatDate(date);
@@ -15,6 +18,7 @@ function refreshWeather(response) {
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`; // updates humidity based on api response
   windElement.innerHTML = `${response.data.wind.speed}km/h`; // updates wind speed based on api response
   temperatureElement.innerHTML = Math.round(temperature); // updates current temperature based on api response
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-icon" />`; // updates image icon based on api response
 }
 
 function formatDate(date) {

@@ -68,7 +68,37 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
+// function for displaying weather forecast for each day
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  let forecastHtml = "";
+
+  // loop through days of array one at a time so forecastHtml is equal to text block
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+   <div class="weather-forecast-day">
+     <div class="weather-forecast-date">${day}</div>
+     <div class="weather-forecast-icon">☀️</div>
+     <div class="weather-forecast-temperatures">
+       <div class="weather-forecast-temperature">
+         <strong>15°</strong>
+       </div>
+       <div class="weather-forecast-temperature">9°</div>
+     </div>
+   </div>`;
+  });
+
+  // Once loop has run, inject text into html
+  forecastElement.innerHTML = forecastHtml;
+}
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("London");
+displayForecast();

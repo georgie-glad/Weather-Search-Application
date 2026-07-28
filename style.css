@@ -1,7 +1,8 @@
 body {
-  background: linear-gradient(135deg, #f7f6fa 0%, #d9dceb 100%);
-  font-family: "Roboto", sans-serif;
+  background: linear-gradient(135deg, #faf9f8 0%, #eee9eb 100%);
+  font-family: "Inter", sans-serif;
   min-height: 100vh;
+  font-weight: 400;
 }
 
 .weather-app {
@@ -9,21 +10,30 @@ body {
   max-width: 600px;
   margin: 45px auto;
   padding: 30px;
-  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  box-shadow: 0 30px 50px rgba(72, 88, 110, 0.06);
   border-radius: 16px;
   padding: 30px;
 }
 
+.temperature-container {
+  color: #48586e;
+  display: flex;
+}
+
+h1 {
+  color: #48586e;
+}
+
 a {
-  color: #e56b8a;
+  color: #70839d;
 }
 header {
-  border-bottom: 1px solid #f9f7fe;
+  border-bottom: 1px solid #f1eeed;
   padding: 0 0 30px 0;
 }
 
 .search-form-input {
-  background-color: #faf9fd;
+  background-color: #f5f3f2;
   border: none;
   border-radius: 6px;
   width: 80%;
@@ -32,13 +42,19 @@ header {
 }
 
 .search-form-button {
-  background-color: #7b8fe8;
+  background-color: #829fc4;
   padding: 15px 30px;
   border: none;
-  font-size: 16px;
-  border-radius: 6px;
+  font-size: 15px;
+  border-radius: 8px;
   color: white;
   margin-left: 5px;
+  box-shadow: 0 3px 8px rgba(130, 159, 196, 0.12);
+}
+
+.search-form-button:hover {
+  background-color: #7892b3;
+  cursor: pointer;
 }
 
 .weather-app-data {
@@ -49,23 +65,23 @@ header {
   margin: 0;
   font-size: 38px;
   line-height: 48px;
+  font-weight: 600;
 }
 .weather-app-details {
   font-size: 16px;
   line-height: 24px;
-  color: rgba(39, 33, 66, 0.4);
+  color: #6b7685;
   font-weight: 500;
 }
 .weather-app-details strong {
-  color: #e56b8a;
+  color: #55667d;
+  font-weight: 600;
 }
-.temperature-container {
-  display: flex;
-}
+
 .weather-app-temperature {
   font-size: 88px;
   line-height: 88px;
-  font-weight: bold;
+  font-weight: 600;
 }
 .weather-icon {
   width: 88px;
@@ -84,7 +100,7 @@ header {
 
 .weather-forecast-date {
   text-align: center;
-  color: rgba(39, 33, 66, 0.4);
+  color: #6b7685;
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 10px;
@@ -99,7 +115,7 @@ header {
 
 .weather-forecast-temperatures {
   text-align: center;
-  color: #e56b8a;
+  color: #48586e;
   display: flex;
   justify-content: center;
   margin-top: 10px;
@@ -114,10 +130,10 @@ main {
 }
 
 footer {
-  border-top: 1px solid #f9f7fe;
+  border-top: 1px solid #f1eeed;
   padding: 30px 0 0 0;
   text-align: center;
   font-size: 13px;
-  color: rgba(0, 0, 0, 0.6);
+  color: #6b7685;
   font-weight: 500;
 }

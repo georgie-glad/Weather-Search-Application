@@ -11,7 +11,7 @@
 
 </div>
 
-This project is a weather search application which displays live weather updates for the city that the user has typed into the search function. By connecting to an external API, real time information about the current temperature and weather conditions, as well as a 5 day weather forecast, are displayed to the user.
+This project is a weather search application which displays live weather updates for any city in the world. By connecting to an external API, real time information about the current temperature and weather conditions, as well as a 5 day weather forecast, are displayed to the user.
 The project is deployed on Netlify and can be accessed following the link below.
 
 <div align="center">

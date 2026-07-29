@@ -6,6 +6,7 @@
 ![CSS3](https://img.shields.io/badge/CSS3-F3EFF0?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-829FC4?style=for-the-badge&logo=javascript&logoColor=black)
 ![alt text](app_example.png)
+
 **A sleek weather app delivering real-time forecasts for any city, worldwide.**
 
 </div>
